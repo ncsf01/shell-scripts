@@ -2,7 +2,7 @@
 
 opcao=0
 
-while [ "$opcao" -ne 3 ]; do
+while [ "$opcao" != "3" ]; do
     echo "=== USUÁRIOS CONECTADOS ==="
     echo ""
     echo "1. Listagem simples (who)"

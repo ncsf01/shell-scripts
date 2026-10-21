@@ -1,7 +1,7 @@
 #!/bin/bash
 opcao=0
 
-while [ "$opcao" -ne 3 ]; do
+while [ "$opcao" != "3" ]; do
 	echo "=== REMOÇÃO DE ARQUIVO ==="
 	echo ""
 	echo "Escolha a operação:"

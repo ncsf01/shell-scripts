@@ -1,7 +1,7 @@
 #!/bin/bash
 op=0
 
-while [ "$op" -ne 7 ]; do
+while [ "$op" != "7" ]; do
     echo "===== GERENCIAMENTO DE ARQUIVOS ====="
     echo "1 - Procurar arquivo"
     echo "2 - Procurar palavra em arquivo"

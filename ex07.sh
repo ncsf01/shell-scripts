@@ -1,7 +1,7 @@
 #!/bin/bash
 opcao=0
 
-while [ "$opcao" -ne 4 ]; do
+while [ "$opcao" != "4" ]; do
     echo "=== BUSCA DE ARQUIVOS E COMANDOS ==="
     echo ""
     echo "1. Procurar arquivo usando 'find' (no diretório atual)"

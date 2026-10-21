@@ -1,7 +1,7 @@
 #!/bin/bash
 opcao=0
 
-while [ "$opcao" -ne 3 ]; do
+while [ "$opcao" != "3" ]; do
 	echo "=== COMPARAR ARQUIVOS (diff) ==="
 	echo ""
 	echo "1. Criar arquivos 'doc1.txt', 'doc2.txt' e 'doc3.txt'"

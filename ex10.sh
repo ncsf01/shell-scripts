@@ -2,7 +2,7 @@
 
 opcao=0
 
-while [ "$opcao" -ne 2 ]; do
+while [ "$opcao" != "2" ]; do
     echo "=== INFORMAÇÕES DE USUÁRIO ==="
     echo ""
     echo "1. Procurar usuário"

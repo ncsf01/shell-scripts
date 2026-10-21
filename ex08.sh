@@ -1,7 +1,7 @@
 #!/bin/bash
 opcao=0
 
-while [ "$opcao" -ne 4 ]; do
+while [ "$opcao" != "4" ]; do
 	echo "=== CONCATENAR ARQUIVOS ==="
 	echo ""
 	echo "1. Criar arquivos 'exemplo1.txt' e 'exemplo2.txt'"

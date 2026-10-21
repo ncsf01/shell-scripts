@@ -1,7 +1,7 @@
 #!/bin/bash
 opcao=0
 
-while [ "$opcao" -ne 5 ]; do
+while [ "$opcao" != "5" ]; do
 	echo "=== MOVER ARQUIVO ENTRE DIRETÓRIOS ==="
 	echo ""
 	echo "Escolha a operação:"

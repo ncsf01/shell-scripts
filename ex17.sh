@@ -2,7 +2,7 @@
 
 opcao=0
 
-while [ "$opcao" -ne 4 ]; do
+while [ "$opcao" != "4" ]; do
     echo "=== ESTATÍSTICAS DE ARQUIVO (wc) ==="
     echo ""
     echo "1. Criar um arquivo de teste rápido (exemplo.txt)"

@@ -1,7 +1,7 @@
 #!/bin/bash
 opcao=0
 
-while [ "$opcao" -ne 2 ]; do
+while [ "$opcao" != "2" ]; do
 	echo "=== VERIFICAR USUÁRIO NO SISTEMA ==="
 	echo ""
 	echo "Escolha a operação:"

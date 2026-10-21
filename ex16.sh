@@ -2,7 +2,7 @@
 
 opcao=0
 
-while [ "$opcao" -ne 6 ]; do
+while [ "$opcao" != "6" ]; do
     echo "=== INFORMAÇÕES DO KERNEL E SISTEMA ==="
     echo ""
     echo "1. Ver todas as informações completas (uname -a)"

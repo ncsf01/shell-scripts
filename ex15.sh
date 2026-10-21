@@ -2,7 +2,7 @@
 
 opcao=0
 
-while [ "$opcao" -ne 4 ]; do
+while [ "$opcao" != "4" ]; do
     echo "=== GERENCIADOR DE PROCESSOS (KILL) ==="
     echo ""
     echo "1. Criar um processo de teste (sleep)"

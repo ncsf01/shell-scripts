@@ -2,7 +2,7 @@
 
 opcao=0
 
-while [ "$opcao" -ne 2 ]; do
+while [ "$opcao" != "2" ]; do
     echo "=== GERENCIADOR DE PROCESSOS DO SISTEMA ==="
     echo ""
     echo "1. Listar processos em execução"

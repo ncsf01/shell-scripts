@@ -2,7 +2,7 @@
 
 opcao=0
 
-while [ "$opcao" -ne 2 ]; do
+while [ "$opcao" != "2" ]; do
     echo "=== ALTERAR PERMISSÕES (chmod) ==="
     echo ""
     echo "1. Escolher arquivo e permissão"

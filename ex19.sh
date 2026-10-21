@@ -1,7 +1,7 @@
 #!/bin/bash
 opcao=0
 
-while [ "$opcao" -ne 7 ]; do
+while [ "$opcao" != "7" ]; do
     echo "===== INFORMAÇÕES DO SISTEMA ====="
     echo "1 - Data atual"
     echo "2 - Versão do kernel"

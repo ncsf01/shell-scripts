@@ -2,7 +2,7 @@
 
 opcao=0
 
-while [ "$opcao" -ne 2 ]; do
+while [ "$opcao" != "2" ]; do
     echo "=== PROCURAR PROCESSO EM EXECUÇÃO ==="
     echo ""
     echo "1. Buscar um processo por nome"

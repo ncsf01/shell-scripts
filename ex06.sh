@@ -1,7 +1,7 @@
 #!/bin/bash
 opcao=0
 
-while [ "$opcao" -ne 3 ]; do
+while [ "$opcao" != "3" ]; do
 	echo "=== PROCURAR PALAVRA EM ARQUIVO ==="
 	echo ""
     echo "Escolha a operação:"
