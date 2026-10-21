@@ -2,7 +2,7 @@
 opcao=0
 
 while [ "$opcao" -ne 3 ]; do
-	echo "=== COMPARAR ARQUIVOS (diff)"
+	echo "=== COMPARAR ARQUIVOS (diff) ==="
 	echo ""
 	echo "1. Criar arquivos 'doc1.txt', 'doc2.txt' e 'doc3.txt'"
 	echo "2. Comparar arquivos"
@@ -39,7 +39,7 @@ EOF
 				echo "O arquivo '$arq2' não existe"
 			else
 				if diff -q "$arq1" "$arq2" > /dev/null; then
-					echo "Os arquivo '$arq1' e '$arq2' são idênticos"
+					echo "Os arquivos '$arq1' e '$arq2' são idênticos"
 				else
 					echo "Os arquivos '$arq1' e '$arq2' são diferentes"
 					

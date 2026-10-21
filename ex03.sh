@@ -2,7 +2,7 @@
 opcao=0
 
 while [ "$opcao" -ne 3 ]; do
-	echo "=== RENOMEAR DE ARQUIVO ==="
+	echo "=== RENOMEAR ARQUIVO ==="
 	echo ""
 	echo "Escolha a operação:"
 	echo "1. Criar um arquivo"

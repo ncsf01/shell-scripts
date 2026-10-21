@@ -11,7 +11,7 @@ while [ "$opcao" -ne 2 ]; do
 
 	case $opcao in
 		1)
-            read -p "Digite o nome do do usuário a ser pesquisado: " usuario
+            read -p "Digite o nome do usuário a ser pesquisado: " usuario
             if grep -q "^$usuario:" /etc/passwd; then
 				echo ""
 				echo "Usuário encontrado."

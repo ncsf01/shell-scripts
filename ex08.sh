@@ -49,7 +49,7 @@ EOF
 					cat "$destino"
 					echo "-----------------------------------"
 				else
-					echo "Algo deu terrívelmente errado! (っ- ‸ - ς)"
+					echo "Algo deu terrivelmente errado! (っ- ‸ - ς)"
 				fi
 			fi
 			;;
@@ -74,7 +74,7 @@ EOF
 					cat "$destino"
 					echo "-----------------------------------"
 				else
-					echo "Algo deu terrívelmente errado! (っ- ‸ - ς)"
+					echo "Algo deu terrivelmente errado! (っ- ‸ - ς)"
 				fi
 			fi
 			;;
