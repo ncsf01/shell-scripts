@@ -8,7 +8,7 @@ Each script is an interactive menu in the terminal that practices common Linux c
 
 | Script | Description | Main commands |
 |---|---|---|
-| `ex01.sh` | Calculator (sum, subtraction, multiplication, division) | `read`, arithmetic |
+| `ex01.sh` | Calculator (sum, subtraction, multiplication, division) | `read`, `bc` |
 | `ex02.sh` | Create and remove files | `touch`, `rm` |
 | `ex03.sh` | Create and rename files | `touch`, `mv` |
 | `ex04.sh` | Create directories and move files between them | `mkdir`, `mv`, `ls` |
@@ -17,7 +17,7 @@ Each script is an interactive menu in the terminal that practices common Linux c
 | `ex07.sh` | Search for files and commands | `find`, `whereis`, `locate` |
 | `ex08.sh` | Concatenate files (overwrite or append) | `cat`, `>`, `>>` |
 | `ex09.sh` | Compare files | `diff` |
-| `ex10.sh` | Show user information | `id`, `/etc/passwd` |
+| `ex10.sh` | Show user information (home directory and disk usage) | `getent`, `cut`, `du` |
 | `ex11.sh` | List logged-in users | `who` |
 | `ex12.sh` | Change file permissions | `chmod` |
 | `ex13.sh` | List running processes | `ps` |
@@ -25,7 +25,7 @@ Each script is an interactive menu in the terminal that practices common Linux c
 | `ex15.sh` | Create, list and kill processes | `sleep`, `ps`, `kill` |
 | `ex16.sh` | Kernel and system information | `uname` |
 | `ex17.sh` | Count lines, words and characters in a file | `wc` |
-| `ex18.sh` | System information panel | `date`, `uname` |
+| `ex18.sh` | System information panel (date, kernel, calendar, uptime) | `date`, `uname`, `cal`, `uptime` |
 | `ex19.sh` | System information menu | `date`, `uname`, `cal`, `uptime`, `who`, `ps` |
 | `ex20.sh` | File management menu | `find`, `grep`, `mv`, `rm`, `diff` |
 
