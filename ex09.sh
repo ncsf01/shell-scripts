@@ -8,7 +8,7 @@ while [ "$opcao" -ne 3 ]; do
 	echo "2. Comparar arquivos"
 	echo "3. Sair"
 	echo ""
-	read -p "Opção (1-3): " op
+	read -p "Opção (1-3): " opcao
 	
 	case $opcao in
 		1)

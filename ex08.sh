@@ -26,11 +26,11 @@ EOF
 EOF
 			echo "Arquivos 'exemplo1.txt' e 'exemplo2.txt' criados com sucesso! ＼(＾O＾)／"
 			echo "Arquivos no diretório atual:"
-            ls
+			ls
 			;;
 		2)
 			echo "Arquivos no diretório atual:"
-            ls
+			ls
 			read -p "Digite o nome do primeiro arquivo: " primeiro_arquivo
 			read -p "Digite o nome do segundo arquivo: " segundo_arquivo
 			
@@ -40,23 +40,22 @@ EOF
 				echo "Erro: O arquivo '$segundo_arquivo' não existe!"
 			else
 				read -p "Digite o nome do arquivo destino: " destino
+				cat "$primeiro_arquivo" "$segundo_arquivo" > "$destino"
+				
+				if [ -f "$destino" ]; then
+					echo "Sucesso: Conteúdo unificado em '$destino'! ＼(＾O＾)／ "
+					echo ""
+					echo "--- Conteúdo atual de $destino ---"
+					cat "$destino"
+					echo "-----------------------------------"
+				else
+					echo "Algo deu terrívelmente errado! (っ- ‸ - ς)"
+				fi
 			fi
-			
-			cat "$primeiro_arquivo" "$segundo_arquivo" > "$destino"
-			
-			if [ -f "$destino" ]; then
-				echo "Sucesso: Conteúdo unificado em '$destino'! ＼(＾O＾)／ "
-				echo ""
-				echo "--- Conteúdo atual de $destino ---"
-				cat "$destino"
-				echo "-----------------------------------"
-			else
-				echo "Algo deu terrívelmente errado! (っ- ‸ - ς)"
-			fi			
 			;;
 		3)
 			echo "Arquivos no diretório atual:"
-            ls
+			ls
 			read -p "Digite o nome do primeiro arquivo: " primeiro_arquivo
 			read -p "Digite o nome do segundo arquivo: " segundo_arquivo
 			
@@ -66,27 +65,26 @@ EOF
 				echo "Erro: O arquivo '$segundo_arquivo' não existe!"
 			else
 				read -p "Digite o nome do arquivo destino: " destino
-			fi
-			
-			cat "$primeiro_arquivo" "$segundo_arquivo" >> "$destino"
-			
-			if [ -f "$destino" ]; then
-				echo "Sucesso: Conteúdo anexado ao final de '$destino'! ＼(＾O＾)／ "
-				echo ""
-				echo "--- Conteúdo atual de $destino ---"
-				cat "$destino"
-				echo "-----------------------------------"
-			else
-				echo "Algo deu terrívelmente errado! (っ- ‸ - ς)"
+				cat "$primeiro_arquivo" "$segundo_arquivo" >> "$destino"
+				
+				if [ -f "$destino" ]; then
+					echo "Sucesso: Conteúdo anexado ao final de '$destino'! ＼(＾O＾)／ "
+					echo ""
+					echo "--- Conteúdo atual de $destino ---"
+					cat "$destino"
+					echo "-----------------------------------"
+				else
+					echo "Algo deu terrívelmente errado! (っ- ‸ - ς)"
+				fi
 			fi
 			;;
 		4)
-            echo "Saindo..."
-            ;;
+			echo "Saindo..."
+			;;
 		*)
-            echo "Opção inválida! Escolha uma opção de 1 a 4. (っ- ‸ - ς)"
-            ;;
-    esac
+			echo "Opção inválida! Escolha uma opção de 1 a 4. (っ- ‸ - ς)"
+			;;
+	esac
 	
 	echo ""
 done

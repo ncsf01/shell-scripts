@@ -8,7 +8,7 @@ while [ "$opcao" -ne 3 ]; do
     echo "1. Listagem simples (who)"
     echo "2. Listagem detalhada com cabeçalho (who -H -a)"
     echo "3. Sair"
-    read -p "Opção (1-3): " op
+    read -p "Opção (1-3): " opcao
 
     echo ""
     case $opcao in

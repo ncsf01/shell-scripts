@@ -10,10 +10,10 @@ while [ "$opcao" -ne 7 ]; do
     echo "5 - Usuários conectados"
     echo "6 - Processos em execução"
     echo "7 - Sair"
-    read -p "Opção desejada (1-7): " op
+    read -p "Opção desejada (1-7): " opcao
 
     echo ""
-    case $op in
+    case $opcao in
         1) date ;;
         2) uname -a ;;
         3) cal ;;
